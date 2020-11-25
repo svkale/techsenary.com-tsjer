@@ -1,4 +1,12 @@
-
+if(document.getElementsByClassName('background_img')[0])
+{
+	var bgimages=document.getElementsByClassName('background_img');
+	console.log(bgimages);
+	for(var i=0;i<bgimages.length;i++)
+	{
+		bgimages[i].parentElement.style.position="relative";
+	}
+}
 
 var nav_elements=document.getElementsByTagName('main')[0].getElementsByTagName('nav')[0].getElementsByTagName('ul')[0].getElementsByTagName('li');
 for(var i=0;i<nav_elements.length;i++)
