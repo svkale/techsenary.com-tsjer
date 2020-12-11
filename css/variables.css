@@ -7,6 +7,6 @@
 	--h2-size:1.6em;
 	--table-border: 0.1vw;
 	--table-padding: 0.4%;
-	--background-image-src: url(../images/Logo.jpg);
+	--background-image-src: url('http://localhost/images/Logo.svg');
 	/*--main-color-2: #044955;*/
 }

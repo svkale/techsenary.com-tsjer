@@ -1,0 +1,145 @@
+<form onsubmit="test()" class="u1">
+	<table class="u1">
+		<tr>
+			<td colspan="2">
+				<h3>Information about Paper :-</h3>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 25%;">
+				Article type:
+			</td>
+			<td>
+				<select name="article_type">
+					<option value="original_research">Original Research</option>
+					<option value="review">Review</option>
+					<option value="case_study">Case Study</option>
+					<option value="short_communication">Short Communication</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Title of Abstract:
+			</td>
+			<td>
+				<input type="text" name="title_of_abstract">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Abstract:
+			</td>
+			<td>
+				<textarea name="abstract" class="u1" style="height: 200px;"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Keywords:
+			</td>
+			<td>
+				<input type="text" name="keyword_1">
+				<input type="text" name="keyword_2">
+				<input type="text" name="keyword_3">
+				<input type="text" name="keyword_4">
+				<input type="text" name="keyword_5">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Names of Authors:
+			</td>
+			<td>
+				<ul style="padding-left: 18px;">
+					<li><input type="text" name="author_name_1"></li>
+					<li><input type="text" name="author_name_2"></li>
+					<li><input type="text" name="author_name_3"></li>
+					<li><input type="text" name="author_name_4"></li>
+					<li><input type="text" name="author_name_5"></li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<h3>Corresponding Author information :-</h3>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Name of corresponding Author:
+			</td>
+			<td>
+				<input type="text" name="author_name_corres">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				E-mail address of corresponding Author:
+			</td>
+			<td>
+				<input type="text" name="author_email_corres">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Affiliation of corresponding Author:
+			</td>
+			<td>
+				<input type="text" name="affiliation_corres_author">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Address of corresponding Author:
+			</td>
+			<td>
+				<input type="text" name="address_corres_author">
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="checkbox" name="check_funding">&nbsp;Funding was received for this work and all of the sources of funding for the work described in this publication are acknowledged.
+				<br>
+				<input type="checkbox" name="check_nofunding">&nbsp;No funding was received for this work.
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="checkbox" name="check_author_manuscript_confirm">&nbsp;We confirm that the manuscript has been read and approved by all named authors.
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="checkbox" name="check_author_order">&nbsp;We confirm that the order of authors listed in the manuscript has been approved by all named authors.
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Add a reviewer
+			</td>
+			<td>
+				<input type="checkbox" name="check_author_order">
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" style="text-align: center;">
+				<input type="file" name="manuscript" accept=".pdf">
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input class="u1" style="margin-top: 0;" type="submit" name="Submit">
+			</td>
+		</tr>
+	</table>
+</form>
+
+<script type="text/javascript">
+	function test()
+	{
+		event.preventDefault();
+		console.log(event);
+	}
+
+</script>
