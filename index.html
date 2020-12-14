@@ -10,6 +10,8 @@
 		<link rel="stylesheet" type="text/css" href="https://sites-admin.github.io/website-modules/elements/nav/nav.css">
 		<link rel="stylesheet" type="text/css" href="https://sites-admin.github.io/website-modules/elements/table/table.css">
 		<link rel="stylesheet" type="text/css" href="https://sites-admin.github.io/website-modules/elements/form/form.css">
+		<link rel="stylesheet" type="text/css" href="https://sites-admin.github.io/website-modules/elements/button/button.css">
+		<link rel="stylesheet" type="text/css" href="https://sites-admin.github.io/website-modules/elements/span/span.css">
 		<link rel="stylesheet" type="text/css" href="https://sites-admin.github.io/website-modules/elements/media/img/in-page-images.css">
 		<link rel="stylesheet" type="text/css" href="https://sites-admin.github.io/website-modules/elements/media/img/background-images.css">
 		<link rel="stylesheet" type="text/css" href="https://sites-admin.github.io/website-modules/utils/putins/putins.css">
@@ -32,7 +34,10 @@
 			</section>
 
 			<section class="u1">
-				<section class="cont cont_xs1 cont_sm1" style="--cont-width: 20%;">
+				<button class="u1 hide_md button_visibility_control" data-button-status="visible" data-button-target="page_menus">
+					<span>Menu</span>
+				</button>
+				<section class="cont cont_xs1 cont_sm1" style="--cont-width: 20%;" id="page_menus">
 					<nav class="nav_side_bar">
 						<ul class="putins_select" data-function-name="request_gdoc_published_inline_contents" data-target-ele-id="contents_page" data-svg-file="box-right-slant" data-svg-struct="multiple" data-svg-fill-color="var(--main-color-2)" data-svg-border-wbyh=0 data-svg-border-color="">
 							<li class="putins_select_active_page nav_active" data-target-url="https://docs.google.com/document/d/e/2PACX-1vQGxcbIireBnHemKkGtx0BnHbr3kyHKm6vcZGDxF_zmMxZVbH4dhxBXBK2hec7RqV_QumcBjU6CPi56/pub?embedded=true" data-proceed-script-custom="document.querySelectorAll('#contents_page')[0].classList.add('gdoc_published_contents')"><div>Home</div></li>
@@ -55,7 +60,7 @@
 					</section>
 					<section class="u1">
 						<h4>Search</h4>
-						<input type="text"><button>Search</button>
+						<input type="text"><button><span>Search</span></button>
 					</section>
 				</section>
 
@@ -65,8 +70,16 @@
 				</section>
 			</section>
 
-
-			<a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>
+			<article class="u1">
+				<a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+					<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png">
+				</a>
+				<br>
+				This work is licensed under a
+				<a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+					Creative Commons Attribution 4.0 International License
+				</a>
+			</article>
 		</main>
 
 		<footer class="cont1" id="contact">
@@ -97,6 +110,7 @@
 	<script src="https://sites-admin.github.io/website-modules/includes/request/request.js" type="text/javascript"></script>
 	<script src="https://sites-admin.github.io/website-modules/includes/strings/dom.js" type="text/javascript"></script>
 	<script src="https://sites-admin.github.io/website-modules/elements/media/img/background-images.js" type="text/javascript"></script>
+	<script src="https://sites-admin.github.io/website-modules/elements/button/button.js" type="text/javascript"></script>
 	<script src="https://sites-admin.github.io/website-modules/utils/putins/putins.js" type="text/javascript"></script>
 	<script src="https://sites-admin.github.io/website-modules/elements/iframe/iframe-svg.js" type="text/javascript"></script> 
 	<script src="https://sites-admin.github.io/website-modules/svg/svg.js" type="text/javascript"></script> 
