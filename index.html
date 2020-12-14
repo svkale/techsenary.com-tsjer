@@ -8,6 +8,8 @@
 		<link rel="stylesheet" type="text/css" href="https://sites-admin.github.io/website-modules/design/layout.css">
 		<link rel="stylesheet" type="text/css" href="https://sites-admin.github.io/website-modules/design/default.css">
 		<link rel="stylesheet" type="text/css" href="https://sites-admin.github.io/website-modules/elements/nav/nav.css">
+		<link rel="stylesheet" type="text/css" href="https://sites-admin.github.io/website-modules/elements/table/table.css">
+		<link rel="stylesheet" type="text/css" href="https://sites-admin.github.io/website-modules/elements/form/form.css">
 		<link rel="stylesheet" type="text/css" href="https://sites-admin.github.io/website-modules/elements/media/img/in-page-images.css">
 		<link rel="stylesheet" type="text/css" href="https://sites-admin.github.io/website-modules/elements/media/img/background-images.css">
 		<link rel="stylesheet" type="text/css" href="https://sites-admin.github.io/website-modules/utils/putins/putins.css">
@@ -16,54 +18,58 @@
 		<!-- https://sites-admin.github.io/website-modules -->
 	</head>
 	<body>
-		<header class="cont" style="margin: 0;">
+		<header class="cont1" style="margin: 0;">
 			<div class="logo" style="position: absolute;background-color: var(--main-color);"></div>
 			<img class="logo rotate_y_half" src="./images/Logo.jpg">
 			<h1 style="text-align: center;font-family: sans-serif;">TechSenary Journal of Engineering & Research</h1>
 			<!-- <h4 style="text-align: center;">ESSIN:XXXX SSIN:XXXX</h4> -->
 		</header>
-		<main class="cont">
+		<main class="cont1">
 			<section style="text-align: center;overflow: hidden;background-color: var(--main-color-2);" class="u1">
-				<span style="text-align: center;float: left;background-color: var(--main-color-2);color: var(--main-color);margin-top: 4px;margin-bottom: 4px;animation: move_lr 16s infinite;" class="cont">
+				<span style="text-align: center;float: left;background-color: var(--main-color-2);color: var(--main-color);margin-top: 4px;margin-bottom: 4px;animation: move_lr 16s infinite;" class="cont1">
 					For submitting your paper, contact: info@techsenary.com
 				</span>
 			</section>
 
-			<section class="u1" style="width: 20%;margin-left: 0;padding: 1%;">
-				<nav class="nav_side_bar">
-					<ul class="putins_select" data-function-name="request_gdoc_published_inline_contents" data-target-ele-id="contents_page" data-svg-file="box-right-slant" data-svg-struct="multiple" data-svg-fill-color="var(--main-color-2)" data-svg-border-wbyh=0 data-svg-border-color="">
-						<li class="putins_select_active_page nav_active" data-target-url="https://docs.google.com/document/d/e/2PACX-1vQGxcbIireBnHemKkGtx0BnHbr3kyHKm6vcZGDxF_zmMxZVbH4dhxBXBK2hec7RqV_QumcBjU6CPi56/pub?embedded=true"><div>Home</div></li>
-						<li data-target-url="https://docs.google.com/document/d/e/2PACX-1vTP75EVp4etaVH7j8i5OmvWH7BWA4YfYcTsE8pQM84tKJbaD6wUVTWFRHnkN8SUKRpFn0ecyp4lAb7T/pub?embedded=true"><div>Journal</div></li>
-						<li data-target-url="https://docs.google.com/document/d/e/2PACX-1vSlxeEeUi8GCBSXzB4H4n7dhimKGwAkh3QudWPcpnb9MACa9rq_zzD_edjB5YUSXAltkoxyRGbUkiRB/pub?embedded=true"><div>Steps to publish</div></li>
-						<!-- <li data-target-url=""><div>Editorial Board</div></li> -->
-						<li data-target-url="paper-submit-form.html" data-function-name-custom="request_response"><div>Submit Paper</div></li>
-						<li data-target-url="https://docs.google.com/document/d/e/2PACX-1vQxZB-Ng40MSV7xzovigQ5KKVw3qn2_jqMlx9anZtlsz65kvfrwzmgGQhAVycnabPzAbxjdwcCNk35c/pub?embedded=true"><div>Policy</div></li>
-						<!-- <li data-target-url=""><div>Indexing</div></li> -->
-						<!-- <li data-target-url=""><div>Archives</div></li> -->
-					</ul>
-				</nav>
+			<section class="u1">
+				<section class="cont cont_xs1 cont_sm1" style="--cont-width: 20%;">
+					<nav class="nav_side_bar">
+						<ul class="putins_select" data-function-name="request_gdoc_published_inline_contents" data-target-ele-id="contents_page" data-svg-file="box-right-slant" data-svg-struct="multiple" data-svg-fill-color="var(--main-color-2)" data-svg-border-wbyh=0 data-svg-border-color="">
+							<li class="putins_select_active_page nav_active" data-target-url="https://docs.google.com/document/d/e/2PACX-1vQGxcbIireBnHemKkGtx0BnHbr3kyHKm6vcZGDxF_zmMxZVbH4dhxBXBK2hec7RqV_QumcBjU6CPi56/pub?embedded=true" data-proceed-script-custom="document.querySelectorAll('#contents_page')[0].classList.add('gdoc_published_contents')"><div>Home</div></li>
+							<li data-target-url="https://docs.google.com/document/d/e/2PACX-1vTP75EVp4etaVH7j8i5OmvWH7BWA4YfYcTsE8pQM84tKJbaD6wUVTWFRHnkN8SUKRpFn0ecyp4lAb7T/pub?embedded=true" data-proceed-script-custom="document.querySelectorAll('#contents_page')[0].classList.add('gdoc_published_contents')"><div>Journal</div></li>
+							<li data-target-url="https://docs.google.com/document/d/e/2PACX-1vSlxeEeUi8GCBSXzB4H4n7dhimKGwAkh3QudWPcpnb9MACa9rq_zzD_edjB5YUSXAltkoxyRGbUkiRB/pub?embedded=true" data-proceed-script-custom="document.querySelectorAll('#contents_page')[0].classList.add('gdoc_published_contents')"><div>Steps to publish</div></li>
+							<!-- <li data-target-url=""><div>Editorial Board</div></li> -->
+							<li data-target-url="paper-submit-form.html" data-function-name-custom="request_response" data-proceed-script-custom="document.querySelectorAll('#contents_page')[0].classList.remove('gdoc_published_contents')"><div>Submit Paper</div></li>
+							<li data-target-url="https://docs.google.com/document/d/e/2PACX-1vQxZB-Ng40MSV7xzovigQ5KKVw3qn2_jqMlx9anZtlsz65kvfrwzmgGQhAVycnabPzAbxjdwcCNk35c/pub?embedded=true" data-proceed-script-custom="document.querySelectorAll('#contents_page')[0].classList.add('gdoc_published_contents')"><div>Policy</div></li>
+							<!-- <li data-target-url=""><div>Indexing</div></li> -->
+							<!-- <li data-target-url=""><div>Archives</div></li> -->
+						</ul>
+					</nav>
 
-				<section class="u1">
-					<h4>Updates</h4>
-					<section style="text-align: center;overflow: hidden;background-color: var(--main-color-2);" class="u1">
-						<span style="text-align: center;float: left;background-color: var(--main-color-2);color: var(--main-color);margin-top: 4px;margin-bottom: 4px;animation: move_tb 8s infinite;" class="cont putins" data-target-url="https://spreadsheets.google.com/feeds/cells/1DdzKlxmaEnqcKclPbJyIx8YiIGchOwjODcuSfLfXbAY/1/public/values?alt=json-in-script" data-function-name="request_gsheet_published_br_seperated">
-						</span>
+					<section class="u1">
+						<h4>Updates</h4>
+						<section style="text-align: center;overflow: hidden;background-color: var(--main-color-2);" class="u1">
+							<span style="text-align: center;float: left;background-color: var(--main-color-2);color: var(--main-color);margin-top: 4px;margin-bottom: 4px;animation: move_tb 8s infinite;" class="cont1 putins" data-target-url="https://spreadsheets.google.com/feeds/cells/1DdzKlxmaEnqcKclPbJyIx8YiIGchOwjODcuSfLfXbAY/1/public/values?alt=json-in-script" data-function-name="request_gsheet_published_br_seperated">
+							</span>
+						</section>
+					</section>
+					<section class="u1">
+						<h4>Search</h4>
+						<input type="text"><button>Search</button>
 					</section>
 				</section>
-				<section class="u1">
-					<h4>Search</h4>
-					<input type="text"><button>Search</button>
+
+				<section class="cont cont_xs1 cont_sm1" style="--cont-width: 80%;">
+					<div class="images_bkgnd"></div>
+					<section class="u1 gdoc_published_contents" id="contents_page"></section>
 				</section>
 			</section>
 
-			<section class="u1" style="width: 80%;margin-left: 0;">
-				<div class="images_bkgnd"></div>
-				<section class="u1 gdoc_published_contents" id="contents_page"></section>
-			</section>
+
 			<a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>
 		</main>
 
-		<footer class="cont" id="contact">
+		<footer class="cont1" id="contact">
 			<address>
 				<section class="u1 md2">
 					<big>Contact us:</big><br><span>Mail us:- info@techsenary.com </span>
