@@ -1,0 +1,155 @@
+<form onsubmit='event.preventDefault();form_wait(event.target);form_JSON_send(event.target)' class="u1" data-form-submit-target="https://script.google.com/macros/s/AKfycbywoj4mHsa0nojHyeiUp80MtHPJU2RnsA11KbfmN4ADQAh2Wc8/exec" data-custom-JSON-to-send-string='{"gscript_callback_function": "generate_id"}' data-custom-JSON-to-send-file='{"gscript_callback_function": "save_files_on_drive"}'>
+	<table class="u1">
+		<tr>
+			<td colspan="2">
+				<h4>Information about Paper :-</h4>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 25%;">
+				Article type:
+			</td>
+			<td>
+				<select name="article_type">
+					<option value="original_research">Original Research</option>
+					<option value="review">Review</option>
+					<option value="case_study">Case Study</option>
+					<option value="short_communication">Short Communication</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Title of Abstract:
+			</td>
+			<td>
+				<input type="text" name="title_of_abstract" required>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Abstract:
+			</td>
+			<td>
+				<div name="abstract" class="u1" style="height: 200px;" maxlength="3000" contenteditable="true" required></div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Keywords:
+			</td>
+			<td>
+				<ul>
+					<li><input type="text" name="keyword_1" maxlength="20" required></li>
+					<li><input type="text" name="keyword_2" maxlength="20" required></li>
+					<li><input type="text" name="keyword_3" maxlength="20" required></li>
+					<li><input type="text" name="keyword_4" maxlength="20" required></li>
+					<li><input type="text" name="keyword_5" maxlength="20" required></li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Names of Authors:
+			</td>
+			<td>
+				<ul data-form-input-number="1" data-form-input-name="author_name" data-form-input-min-number="1" data-form-input-template='<li><input type="text" name="author_name_%%num%%" maxlength="30" required><input type="email" name="author_email_%%num%%" maxlength="30" required></li>'>
+					<li>
+						<input type='text' name='author_name_1' maxlength="30" required>
+						<input type='email' name='author_email_1' required>
+					</li>
+					<button onclick="form_add_input(event,this.parentElement)"><span>Add author</span></button>
+					<button onclick="form_remove_input(event,this.parentElement)"><span>Remove author</span></button>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="checkbox" name="check_author_order" required>&nbsp;We confirm that the order of authors listed in the manuscript has been approved by all named authors.
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<h4>Corresponding Author information :-</h4>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Name of corresponding Author:
+			</td>
+			<td>
+				<input type="text" name="author_name_corres" maxlength="30" required>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				E-mail address of corresponding Author:
+			</td>
+			<td>
+				<input type="email" name="author_email_corres" required>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Contact number of corresponding Author:
+			</td>
+			<td>
+				<input type="tel" name="author_contact_no_corres" minlength="10" maxlength="10" pattern="[0-9]{10}" required>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Affiliation of corresponding Author:
+			</td>
+			<td>
+				<input type="text" name="affiliation_corres_author" required>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Address of corresponding Author:
+			</td>
+			<td>
+				<input type="text" name="address_corres_author" required>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<fieldset>
+					<input type="radio" name="check_funding" value="yes" required>&nbsp;Funding was received for this work and all of the sources of funding for the work described in this publication are acknowledged.
+					<br>
+					<input type="radio" name="check_funding" value="no" required>&nbsp;No funding was received for this work.
+				</fieldset>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">
+				Manuscript file (pdf)
+			</td>
+			<td style="text-align: center;">
+				<input type="file" name="manuscript" accept=".pdf" required>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="checkbox" name="check_author_manuscript_confirm" required>&nbsp;We confirm that the manuscript has been read and approved by all named authors.
+			</td>
+		</tr>
+		<!-- <tr>
+			<td>
+				Add a reviewer
+			</td>
+			<td>
+				<input type="button" name="check_author_order" value="Register reviewer">
+			</td>
+		</tr> -->
+		<tr>
+			<td colspan="2">
+				<input class="u1" style="margin-top: 0;" type="submit" name="Submit">
+			</td>
+		</tr>
+	</table>
+</form>
+<div id="form_response">
+	
+</div>

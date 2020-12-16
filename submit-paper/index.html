@@ -22,7 +22,7 @@
 	<body>
 		<header class="cont1" style="margin: 0;">
 			<div class="logo" style="position: absolute;background-color: var(--main-color);"></div>
-			<img class="logo rotate_y_half" src="./images/Logo.jpg">
+			<img class="logo rotate_y_half" src="/images/Logo.jpg">
 			<h1 style="text-align: center;font-family: sans-serif;">TechSenary Journal of Engineering & Research</h1>
 			<!-- <h4 style="text-align: center;">ESSIN:XXXX SSIN:XXXX</h4> -->
 		</header>
@@ -40,7 +40,7 @@
 				<section class="cont cont_xs1 cont_sm1" style="--cont-width: 20%;" id="page_menus">
 					<nav class="nav_side_bar">
 						<ul class="putins_select" data-function-name="request_gdoc_published_inline_contents" data-target-ele-id="contents_page" data-svg-file="box-right-slant" data-svg-struct="multiple" data-svg-fill-color="var(--main-color-2)" data-svg-border-wbyh=0 data-svg-border-color="">
-							<li class="putins_select_active_page nav_active" data-target-url="https://docs.google.com/document/d/e/2PACX-1vQGxcbIireBnHemKkGtx0BnHbr3kyHKm6vcZGDxF_zmMxZVbH4dhxBXBK2hec7RqV_QumcBjU6CPi56/pub?embedded=true" data-proceed-script-custom="document.querySelectorAll('#contents_page')[0].classList.add('gdoc_published_contents')">
+							<li data-target-url="https://docs.google.com/document/d/e/2PACX-1vQGxcbIireBnHemKkGtx0BnHbr3kyHKm6vcZGDxF_zmMxZVbH4dhxBXBK2hec7RqV_QumcBjU6CPi56/pub?embedded=true" data-proceed-script-custom="document.querySelectorAll('#contents_page')[0].classList.add('gdoc_published_contents')">
 								<div>Home</div>
 							</li>
 							<li data-target-url="https://docs.google.com/document/d/e/2PACX-1vTP75EVp4etaVH7j8i5OmvWH7BWA4YfYcTsE8pQM84tKJbaD6wUVTWFRHnkN8SUKRpFn0ecyp4lAb7T/pub?embedded=true" data-proceed-script-custom="document.querySelectorAll('#contents_page')[0].classList.add('gdoc_published_contents')">
@@ -50,7 +50,7 @@
 								<div>Steps to publish</div>
 							</li>
 							<!-- <li data-target-url=""><div>Editorial Board</div></li> -->
-							<li data-target-url="/submit-paper/submit-paper.html" data-function-name-custom="request_response" data-proceed-script-custom="document.querySelectorAll('#contents_page')[0].classList.remove('gdoc_published_contents');console.log();">
+							<li class="putins_select_active_page nav_active" data-target-url="/submit-paper/submit-paper.html" data-function-name-custom="request_response_HTML" data-proceed-script-custom="document.querySelectorAll('#contents_page')[0].classList.remove('gdoc_published_contents');console.log();">
 								<div>Submit Paper</div>
 							</li>
 							<li data-target-url="https://docs.google.com/document/d/e/2PACX-1vQxZB-Ng40MSV7xzovigQ5KKVw3qn2_jqMlx9anZtlsz65kvfrwzmgGQhAVycnabPzAbxjdwcCNk35c/pub?embedded=true" data-proceed-script-custom="document.querySelectorAll('#contents_page')[0].classList.add('gdoc_published_contents')">
