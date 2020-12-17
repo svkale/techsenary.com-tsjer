@@ -1,5 +1,13 @@
-<form onsubmit='event.preventDefault();form_JSON_send(event);' class="u1" data-form-submit-target="https://script.google.com/macros/s/AKfycbywoj4mHsa0nojHyeiUp80MtHPJU2RnsA11KbfmN4ADQAh2Wc8/exec" data-custom-JSON-to-send="{gscript_callback_function: 'generate_id'}">
+<form onsubmit='event.preventDefault();form_wait(event.target);form_JSON_send(event.target);' class="u1" data-form-submit-target="https://script.google.com/macros/s/AKfycbywoj4mHsa0nojHyeiUp80MtHPJU2RnsA11KbfmN4ADQAh2Wc8/exec"  data-custom-JSON-to-send-string='{"gscript_callback_function": "return_id"}' data-custom-JSON-to-send-file='{"gscript_callback_function": "upload_declaration"}'>
 	<table class="u1">
+		<tr>
+			<td style="text-align: center;">
+				'id'
+			</td>
+			<td style="text-align: center;">
+				<input type="text" name="id" pattern="[0-9]*" required>
+			</td>
+		</tr>	
 		<tr>
 			<td style="text-align: center;">
 				Duly signed Declaration form
@@ -7,7 +15,8 @@
 			<td style="text-align: center;">
 				<input type="file" name="declaration_form_signed" accept=".pdf" required>
 			</td>
-		</tr>		<tr>
+		</tr>		
+		<tr>
 			<td colspan="2">
 				<input class="u1" style="margin-top: 0;" type="submit" name="Submit">
 			</td>
