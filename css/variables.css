@@ -2,6 +2,6 @@
 {
 	--main-color: aliceblue;
 	--main-color-2: indigo;
-	--background-image-src: url('http://localhost/images/Logo.svg');
+	--background-image-src: url('/images/Logo.svg');
 	/*--main-color-2: #044955;*/
 }
