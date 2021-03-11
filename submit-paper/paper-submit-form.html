@@ -145,7 +145,14 @@
 		</tr>
 		<tr>
 			<td colspan="2">
-				<input class="u1" style="margin-top: 0;" type="submit" name="Submit" value="Submit">
+				<ol data-form-input-number="3" data-form-input-name="reviewer_name" data-form-input-min-number="3" data-form-input-template='<li><input type="text" name="reviewer_name_%%num%%" maxlength="30" required><input type="email" name="reviewer_email_%%num%%" maxlength="30" required></li>'>
+					<li>
+						<input type='text' name='reviewer_name_1' maxlength="30" required>
+						<input type='email' name='reviewer_email_1' required>
+					</li>
+					<button onclick="form_add_input(event,this.parentElement)"><span>Add reviewer</span></button>
+					<button onclick="form_remove_input(event,this.parentElement)"><span>Remove reviewer</span></button>
+				</ul>
 			</td>
 		</tr>
 	</table>
