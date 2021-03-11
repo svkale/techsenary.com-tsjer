@@ -140,10 +140,18 @@
 				Add a reviewer
 			</td>
 			<td colspan="2">
-				<ol data-form-input-number="3" data-form-input-name="reviewer_name" data-form-input-min-number="3" data-form-input-template='<li><input type="text" name="reviewer_name_%%num%%" maxlength="30" required><input type="email" name="reviewer_email_%%num%%" maxlength="30" required></li>'>
+				<ol data-form-input-number="3" data-form-input-name="reviewer_name" data-form-input-min-number="3" data-form-input-template='<li><input type="text" name="reviewer_name_%%num%%" maxlength="30" required> <input type="email" name="reviewer_email_%%num%%" maxlength="30" required></li>'>
 					<li>
 						<input type='text' name='reviewer_name_1' maxlength="30" required>
 						<input type='email' name='reviewer_email_1' required>
+					</li>
+					<li>
+						<input type='text' name='reviewer_name_2' maxlength="30" required>
+						<input type='email' name='reviewer_email_2' required>
+					</li>
+					<li>
+						<input type='text' name='reviewer_name_3' maxlength="30" required>
+						<input type='email' name='reviewer_email_3' required>
 					</li>
 					<button onclick="form_add_input(event,this.parentElement)"><span>Add reviewer</span></button>
 					<button onclick="form_remove_input(event,this.parentElement)"><span>Remove reviewer</span></button>
