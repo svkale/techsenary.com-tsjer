@@ -90,6 +90,8 @@
 	<script src="https://lib.ameonlinesolutions.com/utils/css/loading.js" type="text/javascript"></script>
 	<script src="https://lib.ameonlinesolutions.com/utils/putins/google.js" type="text/javascript"></script>
 	<script type="text/javascript">
-		request("https://docs.google.com/document/d/e/2PACX-1vQNv9dHGFaetTFk4SqD9N_Md5TWAP8BIPq0motSjib1to4VwMgejL0RVK7h3cVShZO3SnCT6Y1dm6OL/pub?embedded=true","putins_make_page_from_gdoc","contents_nav","contents_page","Home");
+		let page=location.hash.substr(1);
+		if(!page) page="Home";
+		request("https://docs.google.com/document/d/e/2PACX-1vQNv9dHGFaetTFk4SqD9N_Md5TWAP8BIPq0motSjib1to4VwMgejL0RVK7h3cVShZO3SnCT6Y1dm6OL/pub?embedded=true","putins_make_page_from_gdoc","contents_nav","contents_page",page);
 	</script>
 </html>
